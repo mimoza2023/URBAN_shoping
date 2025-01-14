@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #212026;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container,
+.nav,
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.container {
+  width: 1400px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(./Shoping_img/logo.svg);
+  background-size: cover;
+}
+
+.nav {
+  gap: 35px;
+}
+
+.buttons {
+  width: 350px;
+}
+
+.enter, .sign-up {
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #212026;
+}
+
+.enter {
+  width: 120px;
+}
+
+.sign-up {
+  width: 200px;
+}
