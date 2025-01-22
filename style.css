@@ -4,31 +4,75 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+body,
+.enter,
+.sign-up {
+  font-family: "Jost", serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
   color: #212026;
+}
+
+h2 {
+  font-family: 'Viaoda Libre', serif;
+  font-weight: 500;
+  font-size: 60px;
+  font-style: normal;
 }
 
 a {
   text-decoration: none;
+  color: #212026;
 }
 
-.container,
+p {
+  line-height: 21px;
+}
+
+.header,
 .nav,
-.buttons {
+.buttons,
+.hits__cards,
+.card,
+.feedback__cards,
+.stars {
   display: flex;
   justify-content: space-between;
+}
+
+.hits__part,
+.hits__container,
+.mycard-data,
+.price-btn,
+.feedback__card,
+.rating-data {
+  display: flex;
+  flex-direction: column;
 }
  
 .container {
   width: 1400px;
-  align-items: center;
   margin: 0 auto;
 }
 
 .header {
-  padding: 10px 0;
+  position: relative;
+  align-items: center;
+  padding: 25px 0;
+  z-index: 1;
+}
+
+.shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 2;
 }
 
 .logo {
@@ -39,7 +83,7 @@ a {
 }
 
 .nav {
-  gap: 35px;
+  gap: 65px;
 }
 
 .buttons {
@@ -49,7 +93,6 @@ a {
 .enter, .sign-up {
   height: 50px;
   color: #fff;
-  font-size: 16px;
   border-radius: 10px;
   background-color: #212026;
 }
@@ -60,4 +103,304 @@ a {
 
 .sign-up {
   width: 200px;
+}
+
+.banner, .feedback {
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgba(217, 217, 217, 0.25);
+}
+
+.hits {
+  padding: 70px 0;
+}
+
+.hits__part, .feedback {
+  gap: 40px;
+}
+
+.hits__container {
+  width: 100%;
+  gap: 30px;
+}
+
+.hits__cards {
+  width: 100%;
+}
+
+.mycard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  border-color: #212026;
+  box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.15);
+  background: radial-gradient(at top right, #c8c8ca, #fffefe);
+  z-index: 1;
+}
+
+.mycard-data {
+  position: absolute;
+  top: 218px;
+  right: 0;
+  width: 100%;
+  gap: 44px;
+  align-items: flex-end;
+  z-index: 3;
+}
+
+.price-btn {
+  gap: 8px;
+  align-items: flex-end;
+  padding-right: 10px;
+}
+
+.mycard-title {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25px;
+  background: #fff;
+  padding-top: 4px;
+  border-radius: 0 0 15px 15px;
+}
+
+.mycard01,
+.mycard02,
+.mycard03,
+.mycard04,
+.mycard05,
+.mycard06,
+.mycard07,
+.mycard08,
+.mycard09,
+.mycard10,
+.mycard11,
+.mycard12 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mycard01 {
+  background-image: url(./Shoping_img/woman-coat.png);
+  background-position-x: -10px;
+}
+
+.mycard02 {
+  background-image: url(./Shoping_img/woman-red-dress.png);
+  background-position-x: -35px;
+}
+
+.mycard03 {
+  background-image: url(./Shoping_img/woman-bluse.png);
+  background-position-x: -40px;
+  background-position-y: -35px;
+}
+
+.mycard04 {
+  background-image: url(./Shoping_img/woman-suit.png);
+  background-position-x: 0;
+}
+
+.mycard05 {
+  background-image: url(./Shoping_img/man-T-Shit.png);
+  background-position-x: -15px;
+}
+
+.mycard06 {
+  background-image: url(./Shoping_img/man-Shirt.png);
+  background-position-x: -10px;
+}
+
+.mycard07 {
+  background-image: url(./Shoping_img/man-jeans-jacket-.png);
+  background-position-x: -10px;
+}
+
+.mycard08 {
+  background-image: url(./Shoping_img/man-jacket-alyska.png);
+  background-position-x: -30px;
+}
+
+.mycard09 {
+  background-image: url(./Shoping_img/girle-jacket.png);
+  background-position-x: -19px;
+  background-position-y: -5px;
+}
+
+.mycard10 {
+  background-image: url(./Shoping_img/baby-suit.png);
+  background-position-x: 5px;
+}
+
+.mycard11 {
+  background-image: url(./Shoping_img/baby-T-Shirt.png);
+  background-position-x: -5px;
+  background-position-y: -5px;
+}
+
+.mycard12 {
+  background-image: url(./Shoping_img/girle-dress.png);
+  background-position-x: 3px;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 600;
+  color: #6d6363;
+}
+
+.card-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+  background: #fff;
+  padding-top: 4px;
+  border-radius: 0 0 15px 15px;
+  z-index: 2;
+}
+
+.card__width.card01,
+.card__width.card02,
+.card__width.card03,
+.card__width.card04,
+.card__width.card05,
+.card__width.card06,
+.card__width.card07,
+.card__width.card08,
+.card__width.card09,
+.card__width.card10,
+.card__width.card11,
+.card__width.card12 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__width.card01 {
+  background-image: url(./Shoping_img/woman-coat.png);
+}
+
+.card__width.card02 {
+  background-image: url(./Shoping_img/woman-red-dress.png);
+} 
+
+.card__width.card03 {
+  background-image: url(./Shoping_img/woman-summer-dress.png);
+}
+
+.card__width.card04 {
+  background-image: url(./Shoping_img/woman-suit.png);
+} 
+
+.card__width.card05 {
+  background-image: url(./Shoping_img/man-T-Shit.png);
+}
+
+.card__width.card06 {
+  background-image: url(./Shoping_img/man-Shirt.png);
+}
+
+.card__width.card07 {
+  background-image: url(./Shoping_img/man-jeans-jacket-.png);
+}
+
+.card__width.card08 {
+  background-image: url(./Shoping_img/man-jacket-alyska.png);
+} 
+
+.card__width.card09 {
+  background-image: url(./Shoping_img/girle-jacket.png);
+}
+
+.card__width.card10 {
+  background-image: url(./Shoping_img/baby-suit.png);
+}
+
+.card__width.card11 {
+  background-image: url(./Shoping_img/baby-T-Shirt.png);
+}
+
+.card__width.card12 {
+  background-image: url(./Shoping_img/girle-dress.png);
+}
+
+.feedback {
+  padding-top: 70px;
+}
+
+.feedback__cards {
+  width: 100%;
+  padding: 40px 0 0 0;
+}
+
+.feedback__card {
+  width: 31%;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.rating {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.avatar01, .avatar02, .avatar03 {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.avatar01 {
+  background-image: url(./Shoping_img/avatar1.png);
+}
+
+.avatar02 {
+  background-image: url(./Shoping_img/avatar2.png);
+}
+
+.avatar03 {
+  background-image: url(./Shoping_img/avatar3.png);
+}
+
+.rating-data {
+  gap: 8px;
+}
+
+.rating-data p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stars {
+  width: 100%;
+}
+
+.star-fill, .star {
+  width: 24px;
+  height: 24px;
+}
+
+.star-fill {
+  background-image: url(./Shoping_img/star-fill.png); 
+}
+
+.star {
+  background-image: url(./Shoping_img/star.png); 
 }
